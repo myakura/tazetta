@@ -48,7 +48,7 @@
 
 			position: absolute;
 			left: 12px;
-			bottom: calc((12px + 20px) + 6px);
+			bottom: 12px;
 		}
 
 		/* image container */
@@ -59,6 +59,7 @@
 		/* domain badge */
 		/* position: absolute; left: 12px; bottom: 12px; */
 		> div:last-child {
+			display: none;
 
 			/* align-self: flex-start; height: 20px; */
 			> div {
