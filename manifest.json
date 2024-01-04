@@ -1,0 +1,12 @@
+{
+	"manifest_version": 3,
+	"name": "tazetta",
+	"version": "0.0.1",
+	"description": "display article title in Twitter cards",
+	"content_scripts": [
+		{
+			"matches": ["https://twitter.com/*"],
+			"css": ["tazetta_content.css"]
+		}
+	]
+}

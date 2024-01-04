@@ -1,0 +1,76 @@
+/*
+
+<div aria-labelledby="..." class="..." id="..." data-testid="card.wrapper">
+  <div class="..." id="..." data-testid="card.layoutLarge.media">
+    <a href="..." rel="noopener noreferrer nofollow" target="_blank"
+      aria-label="..." role="link" class="...">
+      <div class="...">
+        <div class="..." style="padding-bottom: 52.356%;"></div>
+        <div class="...">
+          <div aria-label="..." class="..." style="position: absolute; inset: 0px; margin: 0px;">
+            <div class="..."
+              style="background-image: url(&quot;...&quot;);">
+            </div>
+            <img alt="..." draggable="true" src="..." class="...">
+          </div>
+        </div>
+      </div>
+      <div class="...">
+        <div class="...">
+          <div dir="ltr" class="..." style="color: rgb(255, 255, 255); text-overflow: unset;">
+            <span class="..." style="text-overflow: unset;">...</span>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="..." id="..."></div>
+</div>
+
+*/
+
+[data-testid="card.layoutLarge.media"] {
+	> a {
+
+		&::after {
+			display: block;
+			content: attr(aria-label);
+
+			font-size: 18px;
+			font-weight: bolder;
+			color: white;
+			background-color: rgb(0 0 0 / 0.3);
+
+			box-sizing: border-box;
+			width: calc(80% - 12px * 2);
+			padding-inline: 4px;
+			border-radius: 4px;
+
+			position: absolute;
+			left: 12px;
+			bottom: calc((12px + 20px) + 6px);
+		}
+
+		/* image container */
+		> div:first-child {
+
+		}
+
+		/* domain badge */
+		/* position: absolute; left: 12px; bottom: 12px; */
+		> div:last-child {
+
+			/* align-self: flex-start; height: 20px; */
+			> div {
+
+			/* color; font; font-size: 13px */
+				> div[dir] {
+					> span {
+						/* domain name */
+					}
+				}
+			}
+		}
+	}
+
+}
