@@ -1,12 +1,18 @@
 {
 	"manifest_version": 3,
 	"name": "Tazetta",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"description": "Bring back headlines in Twitter cards.",
 	"content_scripts": [
 		{
 			"matches": ["https://twitter.com/*"],
 			"css": ["tazetta_content.css"]
 		}
-	]
+	],
+	"browser_specific_settings": {
+		"gecko": {
+			"id": "{ab0ab1ba-d2db-4c4c-8596-453cb7337656}",
+			"strict_min_version": "117.0"
+		}
+	}
 }
