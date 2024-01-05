@@ -1,8 +1,8 @@
 {
 	"manifest_version": 3,
-	"name": "tazetta",
+	"name": "Tazetta",
 	"version": "0.0.2",
-	"description": "display article title in Twitter cards",
+	"description": "Bring back headlines in Twitter cards.",
 	"content_scripts": [
 		{
 			"matches": ["https://twitter.com/*"],
